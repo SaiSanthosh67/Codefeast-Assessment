@@ -1,5 +1,6 @@
 export const en = {
   "app.title": "String Calculator",
+  "accessibility.skipLink": "Skip to main content",
   "form.label": "Enter Numbers",
   "form.placeholder": "Type numbers separated by commas (e.g., 1, 2, 3)",
   "form.buttonText": "Calculate",

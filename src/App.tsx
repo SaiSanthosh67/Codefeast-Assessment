@@ -46,8 +46,12 @@ const App = () => {
   const isDisabled = !input.trim();
 
   return (
-    <main className={styles.main}>
-      <div className={styles.container}>
+    <>
+      <a href="#main-content" className={styles.skipLink}>
+        {formatMessage({ id: "accessibility.skipLink" })}
+      </a>
+      <main id="main-content" className={styles.main}>
+        <div className={styles.container}>
         <img
           src="https://images.unsplash.com/photo-1594352161389-11756265d1b5?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           width={600}
@@ -133,6 +137,7 @@ const App = () => {
         </div>
       </div>
     </main>
+    </>
   );
 };
 
